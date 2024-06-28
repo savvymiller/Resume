@@ -9,6 +9,9 @@
 \documentclass[11pt,letterpaper]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 \usepackage[T1]{fontenc}
 \usepackage{tgbonum}
+\usepackage{geometry}
+\geometry{left=0.5in, right=0.5in, top=0.7in}
+
 
 % modern themes
 \moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -114,76 +117,91 @@
 \end{tabular}
 \end{center}
 
+\vspace*{-8mm}
+
 \section{EDUCATION}
-{\customcventry{Expected Graduation: May 2027}{BS in Computer Science}{Purdue University}{West Lafayette, IN}{}{}}
+{\customcventry{Expected Graduation: May 2027}{BS in Computer Science - Machine Intelligence Track - Statistics Minor}{Purdue University}{West Lafayette, IN}{}{\vspace*{1mm}\textbf{Relevant Coursework:} Python Programming, Object Oriented Programming in Java, Programming in C, Discrete Structures, Tools (GitHub, VIM, UNIX/LINUX), Calculus 1-3, Linear Algebra, Data Structures and Algorithms, Computer Architecutre, Probability, Machine Learning and Data Mining}}
+
 
 \vspace*{-2mm}
-
 \section{EXPERIENCE}
+
+{\customcventry{Summer 2024}{Software Engineering Intern}{Sims Lifecycle Services}{West Chicago, IL}{}
+{\begin{itemize}
+  \item Utilized Azure Open AI's machine learning model to develop a .NET API and Angular app that drastically improved warehouse efficiency by scanning pieces of technology and automatically storing data in the cloud, increasing the average amount of data collected by 50\% and eliminating the need for manual entry. 
+  \item Developed a GRPC API and accommodating Azure Queue to periodically send product data to the client.
+  \item Worked directly with clients to develop a solution that looked and worked best for both parties.
+\end{itemize}
+}
+
+{\customcventry{Mar 2024 - Present}{Leadership, Allyship, and Mentorship Program}{Deloitte}{Remote}{}
+{\begin{itemize}
+  \item Accepted from a large pool of students to participate in a small scale college cohort, and a large national cohort with 240 students from 40 top schools.
+  \item A cohort-driven mentorship program with a focus on building meaningful connections, developing leadership skills, cultivating professional confidence, and an introduction to consulting.
+  \item Paired with junior- and senior-level mentors for career consulting, network building, and interview prep.
+\end{itemize}
+}
+
+}
 
 {\customcventry{Summer 2023}{Undergraduate Summer Intern}{\textbf{University of Notre Dame, Computational Hydraulics Lab}}{Notre Dame, IN}{}
 {\begin{itemize}
-  \item Assisted in computational modeling of the tides on the global scale with ADCIRC for the National Oceanic and Atmospheric Administration. Operation model is used by coast guard and weather forecasting.
+  \item Computationally modeled tides using MATLAB on the global scale for the National Oceanic and Atmospheric Administration. Sent operational model to super computer for processing and use by the coast guard.
   \item Analyzed data set trends and model performance to identify errors and root cause. Reasons for errors include bathymetric data sets, frictional datasets, model resolution, etc. 
   \item Remapped the global scale model to improve overall accuracy by 5\%  
 \end{itemize}
 }
 }
 
-{\customcventry{Jan 2022 – Apr 2023}{Web Developer}{Barefoot Bay}{Chicago, IL}{}
+{\customcventry{Jan 2022 - Apr 2023}{Web Developer}{\textbf{Barefoot Bay}}{Chicago, IL}{}
 {\begin{itemize}
-  \item A non-profit clothing company dedicated to protecting freshwater lakes across the country. 
-  \item Managed the website's look, functionality, and inventory using HTML and CSS with WooCommerce.
-  \item Aided in the creation of a custom WordPress theme to meet specific needs of the company. 
-\end{itemize}
-}
-
-{\customcventry{May 2021 – Aug 2022}{Lifeguard}{Western Springs Service Club}{Western Springs, IL}{}
-{\begin{itemize}
-  \item Completed CPR and first aid training to ensure pool safety. 
-  \item Coordinated with other lifeguards to organize guard placement and timing. 
-  \item Earned Lifeguard of the Month for outstanding performance. 
+  \item Collaborated with company owners to develop and oversee an e-commerce website using a custom WordPress theme in HTML and CSS, with some of their specific needs being inventory management and custom product selection.
+  \item Expanded company reach from local stores to national sales.
 \end{itemize}
 }
 }
 
+
+
+
+
+\vspace*{-2mm}
 \section{PROJECTS}
 
-
-
-{\customcvproject{Digital Marketplace with Messaging - Java}{}
-{\begin{itemize}
-  \item Used Java to create a digital store program that allows users to log in, add products for selling, and purchase products all through a complex GUI.
-  \item Implemented a solution using java networking to use a client side for interaction with the user and a server side for saving and processing data.
-  \item Created a custom messaging system that includes features like blocking to allow customers and sellers to communicate in a professional fashion.
-\end{itemize}
-}
-
-{\customcvproject{Vex Robotics, Team Captain and Software Lead - C++ Vex Code Pro}{}
-{\begin{itemize}
-  \item State Champions and 31st place at Vex World Competition
-  \item Worked with self-developed PID control and odometry algorithms, concurrently, to automate and allow for easier control of our competition robot.
-  \item Used given rotational, inertial, and vision sensors to develop software that automated and allowed for user control of the robot. 
-\end{itemize}
-}
-}
-
-{\customcvproject{Business Professionals of America - Cisco Packet Tracer}{}
+{\customcvproject{Restaurant Recommendation App - Machine Learning, React, Flask}{}
   {\begin{itemize}
-    \item Placed 7th nationally in the team competition using various networking concepts to develop abstract, large-scale networks in a business pitch format.  
+    \item Implemented a machine learning model to select restaurants based on variables including price and health.
+    \item Used the model to create an application that pulls local restaurants based on the users location.
+    \item Worked in react to develop the front end and flask to develop a lightweight back end in Python.
   \end{itemize}
   }
 }
 
-\section{ADDITIONAL}
+{\customcvproject{Digital Marketplace with Messaging - Java, API}{}
+{\begin{itemize}
+  \item Used Java to create a digital store program that allows users to log in, add products for selling, and purchase products.
+  \item Implemented an API for seamless client, server interaction to save and process data with SQLite.
+\end{itemize}
+}
+
+{\customcvproject{Robotics Exploration - C++}{}
+{\begin{itemize}
+  \item Worked with sensors and self-developed PID control and odometry algorithms, concurrently, to automate and allow for user and automatic control a of Vex robot, learning fundamental principles of real world robotics.
+\end{itemize}
+}
+}
+
+
+
+\vspace*{-2mm}
+\section{SKILLS}
 \begin{minipage}{\maincolumnwidth}%
 	\small{
-    	\begin{itemize}
-          \item Relevant Coursework: Python Programming, Object Oriented Programming in Java, Programming in C, Discrete Mathematics, Tools (Github, VIM, UNIX/LINUX), Calculus 1-3, Linear Algebra
-          \item Kappa Sigma Fraternity - Philanthropy Officer, Recruitment Officer, Academic Head
-          \item Programming Languages: Python, C,  Java, HTML/CSS
-		\end{itemize}}%
-\end{minipage}%
+        \textbf{Languages:} Python, Java, C, C++, C\#, HTML/CSS, JavaScript, TypeScript \newline
+        \textbf{Frameworks:} Node.js, Angular, React, .NET, Flask \newline
+        \textbf{Tools:} Git, Unix, Azure Functions, Azure Databases, Azure Open AI, SQL, DevOps \newline
+        \textbf{Concepts:} Machine Learning, Software Engineering, Robotics, Frontend, Backend, Agile Methodologies
+}\end{minipage}%
       
 }
 % Publications from a BibTeX file without multibib
